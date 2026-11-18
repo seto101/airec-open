@@ -1,0 +1,17 @@
+[Unit]
+Description=Grabador: transcribe en esta PC las grabaciones nuevas del teléfono
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/share/airec-open/venv/bin/python3 %h/airec-open/pc/transcribir.py --vigilar 300 --hilos 6
+Restart=on-failure
+RestartSec=60
+Nice=19
+CPUWeight=20
+MemoryMax=6G
+Environment=PYTHONUNBUFFERED=1
+Environment=PATH=%h/.local/share/airec-open/venv/bin:/usr/bin
+
+[Install]
+WantedBy=default.target
