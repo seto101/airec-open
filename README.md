@@ -1,15 +1,24 @@
 # airec-open
 
-**An open-source Android app for AIREC voice recorders: download your recordings over Bluetooth
-and transcribe them on the phone — no account, no cloud, no internet required.**
+**Now you can have your own app to record meetings with the generic AIREC-type voice recorders.**
+Download your recordings over Bluetooth and transcribe them on the phone — no account, no cloud,
+no internet required.
 
 [Español más abajo](#español)
 
+<p align="center">
+  <img src="docs/screenshots/inicio.png" width="30%" alt="Recordings list">
+  <img src="docs/screenshots/transcripcion.png" width="30%" alt="Transcript following the audio">
+  <img src="docs/screenshots/grabador.png" width="30%" alt="Recorder status and settings">
+</p>
+<p align="center"><sub>Screenshots with sample data.</sub></p>
+
 ## Why
 
-The official app ties a simple voice recorder to an account and a cloud service. airec-open talks
-to the recorder directly over Bluetooth Low Energy, keeps the audio on your phone and transcribes
-it locally with [whisper.cpp](https://github.com/ggml-org/whisper.cpp).
+AIREC-type recorders are cheap, generic Chinese voice recorders — great for meetings — but their
+official app ties them to an account and a cloud service. airec-open talks to the recorder
+directly over Bluetooth Low Energy, keeps the audio on your phone and transcribes it locally with
+[whisper.cpp](https://github.com/ggml-org/whisper.cpp).
 
 ## Features
 
@@ -69,8 +78,12 @@ risk.
 
 ## Español
 
-**App Android de código abierto para las grabadoras AIREC: baja tus grabaciones por Bluetooth y
-transcríbelas en el propio teléfono, sin cuenta, sin nube y sin internet.**
+**Ahora es posible tener tu propia app para grabar audio de reuniones con las grabadoras chinas
+genéricas tipo AIREC.** Baja tus grabaciones por Bluetooth y transcríbelas en el propio teléfono,
+sin cuenta, sin nube y sin internet.
+
+Probada con el modelo de chip Actions ATS3085. Otras variantes pueden usar otro protocolo; si
+tienes una, los aportes son bienvenidos.
 
 - Conectar, ver batería y espacio, poner la hora.
 - Grabar y detener desde el teléfono.
